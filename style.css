@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allerta+Stencil&family=Anton&family=Big+Shoulders+Stencil+Display:wght@100&family=Big+Shoulders+Stencil+Text:wght@100&family=Big+Shoulders+Text:wght@100&family=Darker+Grotesque:wght@600&family=Elsie+Swash+Caps&family=Gugi&family=Libre+Barcode+39+Text&family=Major+Mono+Display&family=Monoton&family=Montserrat:wght@600&family=Overpass:wght@400;700&family=Plaster&family=Quicksand&family=Rubik+Glitch&family=Rubik:wght@700&family=Space+Grotesk:wght@500&family=Supermercado+One&family=Tourney&family=Train+One&family=Ubuntu:wght@400;500;700&family=Wallpoet&display=swap");
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url(Fonts/Euclid\ Circular\ B\ SemiBold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+}
+.sidebar {
+  background: rgba(217, 217, 217, 0.1);
+  border: 1px solid rgba(245, 245, 245, 0.6);
+  width: 15%;
+  padding-left: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: fit-content;
+  margin-top: 0.5%;
+  cursor: pointer;
+  position: fixed;
+}
+.sidebar-ul {
+  background-color: white;
+  list-style: none;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 10%;
+}
+.sidebar-items {
+  margin-bottom: 10%;
+  display: flex;
+  cursor: pointer;
+}
+.sb-link {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #636363;
+  margin-left: 15%;
+  margin-top: -1%;
+}
+.main-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #ecf5e0;
+  width: 85%;
+  height: 10%;
+  margin-top: 0.5%;
+  display: flex;
+  border-radius: 5px;
+  align-self: center;
+  z-index: 1;
+}
+.hamburger {
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
+  cursor: pointer;
+}
+.search-form {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20%;
+  padding: 10px 10px;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  border-radius: 5px;
+}
+.search-box {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.search-box::placeholder {
+  padding-left: 1%;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+/* .search-box {
+  margin-left: 1%;
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 17%;
+  outline: none;
+} */
+/* .search-box::placeholder {
+  padding-left: 1%;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+} */
+.search-btn {
+  margin-left: 3%;
+  border: none;
+  margin-top: 2%;
+  cursor: pointer;
+  background-color: transparent;
+}
+.nav-ul {
+  background: transparent;
+  display: flex;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  justify-content: space-around;
+  width: 15%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 1%;
+}
+.nav-icon {
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+.summary {
+  position: absolute;
+  background-color: transparent;
+  width: 80%;
+  margin-top: 7%;
+  display: flex;
+}
+.welcome {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin-left: 2.5%;
+  width: fit-content;
+  background-color: transparent;
+  color: #3f3b3b;
+}
+.home {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3%;
+}
+.path {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3f3b3b;
+}
+.path-span {
+  color: #3f3b3b;
+}
+.card-ul {
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14%;
+  height: 35%;
+  justify-content: space-evenly;
+  border: 1px solid rgba(98, 98, 98, 0.4);
+  border-left: none;
+  border-right: none;
+  align-self: center;
+}
+.card-list {
+  list-style: none;
+  display: flex;
+  background-color: transparent;
+  height: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 22%;
+  border-radius: 8px;
+  border: 0.4px solid rgba(99, 99, 99, 0.5);
+}
+.card-img {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+}
+.sub-div {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #636363;
+}
+.card-name {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8.83871px;
+}
+.summary-p {
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: -15px;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  width: 10%;
+  text-align: center;
+}
+.top-crops {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  top: 205px;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  width: 13%;
+  /* z-index: 1; */
+  text-align: center;
+}
+.notification {
+  position: absolute;
+  background-color: green;
+  left: 990px;
+  margin-top: -1px;
+  width: 15px;
+  margin-bottom: auto;
+  height: 15px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  padding-top: 3px;
+  /* padding-bottom: auto; */
+  z-index: 1;
+}
+.table-div {
+  background-color: rgb(255, 255, 255);
+  margin-top: 500px;
+  height: fit-content;
+  border-style: none;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 90%;
+  align-self: center;
+  border-left: 0.6px solid rgba(217, 217, 217, 0.5);
+  border-right: 0.6px solid rgba(217, 217, 217, 0.5);
+  border-bottom: 0.6px solid rgba(217, 217, 217, 0.5);
+}
+.t-head {
+  /* height: 50px; */
+  background: rgba(129, 178, 72, 0.5);
+  /* border-top: 0.6px solid rgba(217, 217, 217, 0.5);
+  border-bottom: 0.6px solid rgba(217, 217, 217, 0.5); */
+  /* border-style: none;
+  border-collapse: collapse;
+  border-spacing: 0px; */
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  /* border-collapse: collapse; */
+  text-align: left;
+  /* width: max-content; */
+  padding: 15px 0px;
+}
+.t-head:first-child {
+  padding: 10px 20px;
+  text-align: center;
+}
+.t-head:last-child {
+  /* padding: 10px 20px; */
+  text-align: center;
+}
+.t-head:nth-child(6) {
+  text-align: center;
+}
+.t-row {
+  /* text-align: center; */
+
+  color: #636363;
+}
+.t-data {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  height: 50px;
+  text-align: left;
+  border-bottom: 0.6px solid rgba(217, 217, 217, 0.5);
+  align-self: center;
+}
+.t-link {
+  background: #85b04c;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+.t-link:hover {
+  color: #636363;
+  background: rgba(129, 178, 72, 0.5);
+}
+.t-row .t-data:first-child {
+  text-align: center;
+}
+.t-row .t-data:last-child {
+  text-align: center;
+}
+
+.stars {
+  text-align: center;
+}
+.fa-star {
+  color: #636363;
+}
+.green {
+  color: rgba(129, 178, 72, 0.5);
+}
+
+.deals-ul {
+  position: absolute;
+  display: flex;
+  margin-top: 80%;
+  background-color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  /* position: absolute; */
+  /* padding: 100px; */
+  justify-content: space-evenly;
+  align-self: center;
+  text-align: center;
+  border: none;
+  border-top: 1px solid rgba(98, 98, 98, 0.4);
+}
+.deals-li {
+  list-style: none;
+  background: #ffffff;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px;
+}
+.mini-div {
+  background: #ffffff;
+  width: fit-content;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.6px solid rgba(99, 99, 99, 0.5);
+  box-shadow: 4px -1px 5px -4px rgba(99, 99, 99, 1);
+  border-radius: 8px;
+  padding: 10px;
+}
+.deal-p {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #394532;
+}
+.deal-h2 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #394532;
+}
+.promo-1 {
+  /* position: absolute; */
+  position: absolute;
+  left: -2%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+}
+.promo-2 {
+  /* position: absolute; */
+  position: absolute;
+  left: 23.5%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+}
+.promo-3 {
+  /* position: absolute; */
+  position: absolute;
+  left: 48.5%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+}
+.promo-4 {
+  /* position: absolute; */
+  position: absolute;
+  left: 73%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+}
+.quantity {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #626262;
+}
+.nb {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  margin-bottom: 10px;
+  color: #626262;
+}
+.view-item {
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  color: white;
+  padding: 5px 15px;
+  background: #81b248;
+  border-radius: 3.57143px;
+}
+.view-item:hover {
+  color: #636363;
+  background: rgba(129, 178, 72, 0.5);
+}
+.hot-deals {
+  position: absolute;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  left: 0%;
+  top: -3%;
+  background-color: #fff;
+  color: #394532;
+}
